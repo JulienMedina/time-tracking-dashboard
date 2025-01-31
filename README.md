@@ -33,3 +33,6 @@ Il s'agit d'un tableau de bord interactif affichant des statistiques d'activité
 ```sh
 git clone https://github.com/ton-utilisateur/time-tracking-dashboard.git
 cd time-tracking-dashboard
+
+## 📝 Licence
+Ce projet est sous licence **MIT** – Consultez le fichier [LICENSE](./LICENSE) pour plus de détails.
