@@ -27,6 +27,9 @@ Il s'agit d'un tableau de bord interactif affichant des statistiques d'activité
 - **JSON** pour le stockage des données  
 
 ---
+## 📝 Licence
+Ce projet est sous licence **MIT** – Consultez le fichier [LICENSE](./LICENSE) pour plus de détails.
+
 
 ## 📂 Installation et exécution locale
 1️⃣ **Clone le repo**  
@@ -34,5 +37,3 @@ Il s'agit d'un tableau de bord interactif affichant des statistiques d'activité
 git clone https://github.com/ton-utilisateur/time-tracking-dashboard.git
 cd time-tracking-dashboard
 
-## 📝 Licence
-Ce projet est sous licence **MIT** – Consultez le fichier [LICENSE](./LICENSE) pour plus de détails.
