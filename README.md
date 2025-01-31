@@ -2,7 +2,7 @@
 
 
 ## 🔗 Live Demo
-🔴 **[Voir le projet en ligne]((https://julienmedina.github.io/time-tracking-dashboard/))**
+🔴 **[Voir le projet en ligne](https://julienmedina.github.io/time-tracking-dashboard/)**
 
 ---
 
