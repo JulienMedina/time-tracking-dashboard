@@ -1,0 +1,259 @@
+/* Importation de la police Rubik */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+/* Styles globaux */
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(226, 43%, 10%);
+  color: hsl(236, 100%, 87%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  max-width: 1440px;
+}
+.user-card {
+  width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Partie supérieure (profil utilisateur) */
+.user-card-header {
+  background-color: hsl(246, 80%, 60%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(236, 100%, 87%);
+}
+
+.user-image {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  padding: 20px;
+}
+
+.user-info h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.user-info h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Partie inférieure (boutons de sélection de période) */
+.user-card-body {
+  background-color: hsl(235, 46%, 20%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  border-radius: 15px;
+  margin-top: -10px;
+}
+
+.time-option {
+  background: none;
+  border: none;
+  color: hsl(235, 45%, 61%);
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.time-option.active {
+  color: hsl(236, 100%, 87%);
+  font-weight: bold;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 30px;
+
+  padding-left: 20px;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: visible;
+  background-color: hsl(235, 46%, 20%);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 250px;
+}
+
+.card-header {
+  height: 50px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  border-top-left-radius: 15px; /* Arrondi les coins du haut */
+  border-top-right-radius: 15px;
+}
+
+.card-header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+/* Style de l'icône */
+.options-icon {
+  width: 20px;
+  height: 5px;
+  margin-left: 150px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.option-icon:hover {
+  opacity: 1;
+}
+.card-icon {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  width: 45px;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  margin-top: -10px;
+  position: relative;
+  z-index: 1;
+  justify-items: left;
+}
+
+.card-body h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(236, 100%, 87%);
+}
+
+.card-body p {
+  font-size: 50px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.card-body small {
+  color: hsl(235, 45%, 61%);
+}
+
+.card.work .card-header {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.card.play .card-header {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.card.study .card-header {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.card.exercise .card-header {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.card.social .card-header {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.card.care .card-header {
+  background-color: hsl(43, 84%, 65%);
+}
+/* 📱 Version Mobile */
+@media (max-width: 768px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .user-card {
+    width: 100%;
+    max-width: 350px; /* Évite qu’elle devienne trop grande */
+    order: -1; /* 🚀 Place `.user-card` en premier */
+  }
+
+  .user-card-body {
+    display: flex;
+    justify-content: center; /* Centre les boutons */
+    gap: 10px; /* Ajoute un petit espace entre eux */
+    padding: 15px;
+  }
+
+  .time-options {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .time-option {
+    flex: 1; /* Fait en sorte que les boutons aient la même largeur */
+    text-align: center; /* Centre le texte */
+    padding: 10px;
+    border-radius: 10px; /* Arrondit les boutons */
+    background-color: hsl(235, 46%, 20%);
+    color: hsl(235, 45%, 61%);
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .time-option.active {
+    color: hsl(236, 100%, 87%);
+    font-weight: bold;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
