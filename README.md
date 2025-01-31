@@ -1,8 +1,5 @@
 # 📌 Time Tracking Dashboard
 
-![Preview](./images/preview.png) <!-- Ajoute une capture d'écran ici -->
-
-![Uploading Capture d'écran 2025-01-31 161509.png…]()
 
 ## 🔗 Live Demo
 🔴 **[Voir le projet en ligne]((https://julienmedina.github.io/time-tracking-dashboard/))**
